@@ -1,10 +1,15 @@
 
 name: Update Eurostat Industrial Production
 
-# Initially, run the workflow manually
 on:
+  # Allow manual execution
   workflow_dispatch:
 
+  # Automatic execution (at 07:17 Monday - Friday) 
+  schedule:
+    - cron: "17 7 * * 1-5"
+      timezone: "Europe/Madrid"
+  
 # Allow the workflow to save updated data
 permissions:
   contents: write
