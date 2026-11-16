@@ -1,14 +1,14 @@
 # EUROSTAT - MONTHLY INDUSTRIAL PRODUCTION
 
 # 1. Only if running independently: 
-# rm(list = ls()) 
-# library(httr2)
-# library(readr)
-# library(dplyr)
+rm(list = ls()) 
+library(httr2)
+library(readr)
+library(dplyr)
 
 # setwd("C:/Users/jdona/Documents/BdE") #Set working directory,
 
-# source("Config.R")  # Define countries and assign IDs  
+ source("Config.R")  # Define countries and assign IDs  
 
 # 3. Define API URL
 base_url <- paste0(
